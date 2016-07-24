@@ -1,3 +1,5 @@
-var package = require("./package");
-
-console.log(`rattle v${package.version}`)
+/**
+ * Rattle Global .noderc
+ *
+ * Write code here which will execute on ALL REPLs
+ */
