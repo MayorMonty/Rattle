@@ -1,5 +1,4 @@
 # Rattle
-===
 
 Custom REPL for Node.js, with support for startup scripts and more (in the future)
 
