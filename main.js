@@ -3,7 +3,8 @@ const repl    = require("repl"),
       vm      = require("vm"),
       fs      = require("fs"),
       path    = require("path"),
-      spawn   = require("child_process").spawn;
+      spawn   = require("child_process").spawn,
+      package = require("./package");
 
 
 function insertFile(file, context) {
@@ -15,9 +16,12 @@ function insertFile(file, context) {
 }
 
 
+if (process.argv.includes("--global")) {
+  console.log(path.resolve(__dirname, ".noderc"));
 /** Hijack the REPL, if asked **/
-if (process.argv.length < 3 || process.argv.includes("-i") || process.argv.includes("--interactive")) {
+ } else if (process.argv.length < 3 || process.argv.includes("-i") || process.argv.includes("--interactive")) {
 
+  console.log(`rattle v${package.version}`);
 
   var cmdline = repl.start("> "),
       context = cmdline.context;
