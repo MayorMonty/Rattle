@@ -1,0 +1,27 @@
+{
+  "name": "rattle",
+  "version": "0.0.0",
+  "description": "Custom REPL for Node.js",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MayorMonty/Rattle.git"
+  },
+  "keywords": [
+    "repl",
+    "node.js",
+    "configurable"
+  ],
+  "bin": {
+    "rnode": "main.js"
+  },
+  "author": "Brendan McGuire <artificalchamber@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MayorMonty/Rattle/issues"
+  },
+  "homepage": "https://github.com/MayorMonty/Rattle#readme"
+}
