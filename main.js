@@ -19,6 +19,8 @@ function insertFile(file, context) {
 if (process.argv.includes("--global")) {
   console.log(path.resolve(__dirname, ".noderc"));
 /** Hijack the REPL, if asked **/
+ } else if (process.argv.includes("--version") || process.argv.includes("-v")) {
+   console.log(`rattle v${package.version} (node ${process.version})`);
  } else if (process.argv.length < 3 || process.argv.includes("-i") || process.argv.includes("--interactive")) {
 
   console.log(`rattle v${package.version}`);
